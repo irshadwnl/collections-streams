@@ -1,0 +1,15 @@
+Efficient File Reading
+
+Uses BufferedReader with FileReader to handle large files efficiently.
+
+Reads the file line-by-line instead of loading it entirely into memory error.
+
+Filtering Lines
+
+Converts each line to lowercase and checks for the word error.
+
+Prints only the matching lines.
+
+Exception Handling error
+
+Catches IOException to prevent crashes if the file is missing or unreadable.
