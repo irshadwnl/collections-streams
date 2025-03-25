@@ -10,12 +10,15 @@ public class NestedTryCatch {
         try{
             System.out.println("Enter the index");
             int n=sc.nextInt();
-            System.out.println(arr[n]);
-            System.out.println(arr[n]/div);
+            try{
+                System.out.println(arr[n]/div);
+            }catch (ArithmeticException e) {
+                System.out.println(e.getMessage());
+            }
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
+        }  catch (Exception e) {
+            System.out.println("An error occured");
         }
     }
 }
